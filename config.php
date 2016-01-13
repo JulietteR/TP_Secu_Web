@@ -2,6 +2,6 @@
 
 $host = "localhost";
 $user = "root";
-$password = "693647";
+$password = "";
 $database = "";
 
