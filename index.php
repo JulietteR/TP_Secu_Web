@@ -10,7 +10,11 @@
 	<section class="container">
 		<div class="login">
 			<h1>Se connecter à l'application</h1>
+<<<<<<< HEAD
 			<form method="post" action="sucess.html">
+=======
+			<form method="post" action="recup.php">
+>>>>>>> 283ae36ec5fc710f567c8f9abb7c98ae893acdc2
 				<p><input type="text" name="login" value="" placeholder="Username or Email"></p>
 				<p><input type="password" name="password" value="" placeholder="Password"></p>
 				<p class="remember_me">
