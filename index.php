@@ -10,7 +10,11 @@
 	<section class="container">
 		<div class="login">
 			<h1>Se connecter à l'application</h1>
+<<<<<<< HEAD
 			<form method="post" action="recup.php">
+=======
+			<form method="post" action="sucess.html">
+>>>>>>> 12d0e01e141d76c85037faa0710338742f297aaf
 				<p><input type="text" name="login" value="" placeholder="Username or Email"></p>
 				<p><input type="password" name="password" value="" placeholder="Password"></p>
 				<p class="remember_me">
@@ -24,7 +28,7 @@
 		</div>
 
 		<div class="login-help">
-			<p>Mot de passe oublié ? <a href="index.html">Regénérer</a>.</p>
+			<p>Mot de passe oublié ? <a href="reset.html">Regénérer</a>.</p>
 		</div>
 	</section>
 </section>
