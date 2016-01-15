@@ -13,11 +13,13 @@ function connectBDD($host, $database, $user, $password){
 
 	if (assert($bdd))
 		echo "Connexion à la bdd effectuée";
+
+	return $bdd;
 }
 
 // Insérer un utilisateur en base
-function addUser($username, $password){
-	$req = $bdd->prepare('INSERT INTO users(username, password) VALUES( ":username", ":password")');
+function addUser($username, $password, $bdd){
+	$req = $bdd->prepare('INSERT INTO users(username, password) VALUES( :username, :password)');
 	$req->execute(array(
 		'username' => $username,
 		'password' => $password
