@@ -3,17 +3,13 @@
 //Connexion bdd
 function connectBDD($host, $database, $user, $password){
 	 $arg1 = "mysql:host=$host;dbname=$database";
-	 echo $arg1;
+	// echo $arg1;
 	 try {
 		$bdd = new PDO($arg1, $user, $password);
 	}catch (PDOException $e) {
     	print "Erreur !: " . $e->getMessage() . "<br/>";
    		die();
 	}
-
-	if (assert($bdd))
-		echo "Connexion à la bdd effectuée";
-
 	return $bdd;
 }
 
@@ -26,3 +22,8 @@ function addUser($username, $password, $bdd){
 		));
 }
 
+function getUsers($bdd){
+	$req = $bdd->query('SELECT * FROM users');
+
+	return $req;
+}
