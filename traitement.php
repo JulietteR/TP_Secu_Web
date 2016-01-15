@@ -7,7 +7,10 @@ $login = $_POST["login"];
 $password = $_POST["password"];
 echo "<center> $login $password </center>";
 
-echo $host . "a\n";
+echo "host: ".$host."\n";
+echo "dbname: ".$database."\n";
+echo "login: ".$user."\n";
+echo "mdp: ".$password."\n";
 
 connectBDD($host, $database, $user, $password);
 
