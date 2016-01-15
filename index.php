@@ -11,7 +11,7 @@
 		<div class="login">
 			<h1>Se connecter à l'application</h1>
 
-			<form method="post" action="recup.php">
+			<form method="post" action="traitement.php">
 				<p><input type="text" name="login" value="" placeholder="Username or Email"></p>
 				<p><input type="password" name="password" value="" placeholder="Password"></p>
 				<p class="remember_me">
