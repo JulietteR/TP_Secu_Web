@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-	<section class="container">
+	<section class="container listing">
+	<h1>Liste des utilisateurs</h1>
 		<?php
 			require_once 'config.php';
 			require_once 'fonction.php';
@@ -17,7 +18,10 @@
 			$list = getUsers($bdd);
 
 			while ($donnees = $list->fetch()){
-				echo $donnees['username']; 
+				?> 
+				<?php
+				echo "<div>Pseudo de l'utilisateur : ".$donnees['username']."</div>";
+
 				echo "</br>";
 			}
 ?>

@@ -14,7 +14,7 @@ echo "mdp: ".$password."\n";
 
 $bdd = connectBDD($host, $database, $user, $password);
 
-if (assert($login) && assert($password)){
+if (assert('$login') && assert($password)){
 	$mdp = hash("sha256", $mdp);
 	echo $mdp;
 
